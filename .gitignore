@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/MyLearningSkills/.vs
+/MyLearningSkills/bin
+/MyLearningSkills/obj
+/MyLearningSkills.BL/bin
+/MyLearningSkills.BL/obj
+/MyLearningSkills.DL/bin
+/MyLearningSkills.DL/obj
+/MyLearningSkills.Infrastructure/bin
+/MyLearningSkills.Infrastructure/obj

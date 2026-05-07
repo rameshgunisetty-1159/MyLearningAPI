@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../MyLearningSkills.BL/MyLearningSkills.BL.csproj" />
+  <Project Path="../MyLearningSkills.DL/MyLearningSkills.DL.csproj" Id="0655461e-1200-4401-84a6-3e689a86c7b2" />
+  <Project Path="../MyLearningSkills.Infrastructure/MyLearningSkills.Infrastructure.csproj" />
+  <Project Path="MyLearningSkills.csproj" />
+</Solution>

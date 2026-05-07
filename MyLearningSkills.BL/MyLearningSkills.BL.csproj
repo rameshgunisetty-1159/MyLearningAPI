@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyLearningSkills.DL\MyLearningSkills.DL.csproj" />
+    <ProjectReference Include="..\MyLearningSkills.Infrastructure\MyLearningSkills.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
