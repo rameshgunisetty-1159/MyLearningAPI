@@ -6,6 +6,8 @@ using MyLearningSkills.BL.Interfaces;
 using MyLearningSkills.DL;
 using MyLearningSkills.DL.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Diagnostics;
+using MyLearningSkills.API.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -40,6 +42,8 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+builder.Logging.AddDebug();
+
 
 var app = builder.Build();
 
@@ -55,7 +59,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseAuthentication();
 
 app.UseAuthorization();

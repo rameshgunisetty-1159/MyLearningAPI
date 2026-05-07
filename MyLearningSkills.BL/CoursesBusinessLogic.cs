@@ -58,13 +58,13 @@ namespace MyLearningSkills.BL
         {
             if (id != course.Id)
             {
-                throw new Exception("Id passed in route param doesn't match with id contains in course object");
+                throw new ApiException("Id passed in route param doesn't match with id contains in course object", 500);
             }
 
             var existingEntity = _coursesRepository.GetAllCourses().FirstOrDefault(x => x.Id == course.Id);
             if (existingEntity is null)
             {
-                throw new Exception($"Course with id {course.Id} not found.");
+                throw new ApiException($"Course with id {course.Id} not found." , 404);
             }
 
             CoursesMapper.Map(course, existingEntity);
